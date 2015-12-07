@@ -1,0 +1,2 @@
+The class file myHashMap has the implementation of a HashMap with get,put,remove functions in amortized constant times
+The executable file test_myhashmap should be run with "python test_myhashmap"

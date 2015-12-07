@@ -1,0 +1,88 @@
+######## Advertising choices in decreasing order of viewability ######
+          Site  Moat Impressions  SiteVisits    CPM  Viewability
+0    yahoo.com              5000   155269275  0.010     0.693481
+3     espn.com              1000      129612  0.024     0.138696
+4   lyrics.com               600      178313  0.009     0.083218
+2   drinks.com               500         500  0.090     0.069348
+1  m.yahoo.com               100      148357  0.020     0.013870
+5   amazon.com                10   139944926  0.025     0.001387
+######## Calculating the Viewability metric for Coke ######
+         Site  Moat Impressions  Unit/Total  CokeViewability
+0   yahoo.com                10    0.023923         0.016590
+1  drinks.com               300    0.717703         0.049771
+2  lyrics.com               100    0.239234         0.019909
+3  amazon.com                 8    0.019139         0.000027
+Total coke viewability:36.0721220527
+######## Calculating the Viewability metric for Pepsi ######
+          Site  Moat Impressions  Unit/Total  PepsiViewability
+0    yahoo.com                20       0.050          0.034674
+1  m.yahoo.com                30       0.075          0.001040
+2     espn.com               200       0.500          0.069348
+3   lyrics.com               150       0.375          0.031207
+Total Pepsi viewability:54.507628294
+Pepsi's advertising strategy is more effective than Coke w.r.t Viewability metric
+######## Calculating the Ad stickness metric ######
+#### in increasing  order of AdEffectiveness(increasiness order of stickiness
+          Site  Moat Impressions  SiteVisits    CPM  Viewability    Stickiness
+5   amazon.com                10   139944926  0.025     0.001387  7.145668e-08
+0    yahoo.com              5000   155269275  0.010     0.693481  3.220212e-05
+1  m.yahoo.com               100      148357  0.020     0.013870  6.740498e-04
+4   lyrics.com               600      178313  0.009     0.083218  3.364870e-03
+3     espn.com              1000      129612  0.024     0.138696  7.715335e-03
+2   drinks.com               500         500  0.090     0.069348  1.000000e+00
+         Site  Moat Impressions  Unit/Total  CokeViewability  coke_stickiness
+0   yahoo.com                10    0.023923         0.016590     3.220212e-04
+1  drinks.com               300    0.717703         0.049771     3.000000e+02
+2  lyrics.com               100    0.239234         0.019909     3.364870e-01
+3  amazon.com                 8    0.019139         0.000027     5.716535e-07
+Coke Strategy: Total number of actual rendered impressions 300.336809557
+          Site  Moat Impressions  Unit/Total  PepsiViewability  \
+0    yahoo.com                20       0.050          0.034674
+1  m.yahoo.com                30       0.075          0.001040
+2     espn.com               200       0.500          0.069348
+3   lyrics.com               150       0.375          0.031207
+
+   pepsi_stickiness
+0          0.000644
+1          0.020221
+2          1.543067
+3          0.504730
+Pepsi Strategy: Total number of actual rendered impressions 2.06866298104
+Strategy of coke is more effective than Pepsi w.r.t Stickiness metric
+######## End of Ad stickness metric ######
+          Site  Moat Impressions  SiteVisits    CPM  Viewability    Stickiness
+0    yahoo.com              5000   155269275  0.010     0.693481  3.220212e-05
+1  m.yahoo.com               100      148357  0.020     0.013870  6.740498e-04
+2   drinks.com               500         500  0.090     0.069348  1.000000e+00
+3     espn.com              1000      129612  0.024     0.138696  7.715335e-03
+4   lyrics.com               600      178313  0.009     0.083218  3.364870e-03
+5   amazon.com                10   139944926  0.025     0.001387  7.145668e-08
+######## Calculating the CPM metric for Coke ######
+         Site  Moat Impressions  Unit/Total  CokeViewability  coke_stickiness  \
+0   yahoo.com                10    0.023923         0.016590     3.220212e-04
+1  drinks.com               300    0.717703         0.049771     3.000000e+02
+2  lyrics.com               100    0.239234         0.019909     3.364870e-01
+3  amazon.com                 8    0.019139         0.000027     5.716535e-07
+
+   coke_CPM
+0       0.1
+1      27.0
+2       0.9
+3       0.2
+######## Calculating the CPM metric for Pepsi ######
+          Site  Moat Impressions  Unit/Total  PepsiViewability  \
+0    yahoo.com                20       0.050          0.034674
+1  m.yahoo.com                30       0.075          0.001040
+2     espn.com               200       0.500          0.069348
+3   lyrics.com               150       0.375          0.031207
+
+   pepsi_stickiness  pepsi_cpm
+0          0.000644       0.20
+1          0.020221       0.60
+2          1.543067       4.80
+3          0.504730       1.35
+Coke Strategy: Total cost spent 28.2 to  actual rendered impressions 300.336809557
+Coke Strategy: Total cost per actual rendered impressions 0.0938945846885
+Pepsi Strategy: Total cost spent 6.95 to  actual rendered impressions 2.06866298104
+Pepsi Strategy: Total cost per  actual rendered impressions 3.35965793543
+Coke spent less than Pepsi per impression
